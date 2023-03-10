@@ -22,7 +22,9 @@ const Filters: React.FC<Props> = ({ filterSelected, onFilterChange }) => {
                 event.preventDefault()
                 onFilterChange(key as FilterValue)
               }}
-            ></a>
+            >
+              {literal}
+            </a>
           </li>
         )
       })}
